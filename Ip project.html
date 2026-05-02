@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="quiz-container" id="quiz">
+        <header>
+            <h2>📖 IP 1 Final Exam</h2>
+            <p>Test your Internet programming knowledge</p>
+        </header>
+        <div class="question-header">
+            <span id="question-number">Question 1/X</span>
+            <h2 id="question-text">Question goes here</h2>
+        </div>
+
+        <ul class="options-list">
+            <li>
+                <input type="radio" name="answer" id="opt1" class="option" value="a">
+                <label for="opt1" id="label-opt1">Answer A</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="opt2" class="option" value="b">
+                <label for="opt2" id="label-opt2">Answer B</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="opt3" class="option" value="c">
+                <label for="opt3" id="label-opt3">Answer C</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="opt4" class="option" value="d">
+                <label for="opt4" id="label-opt4">Answer D</label>
+            </li>
+        </ul>
+
+        <div class="btn-group">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+            <button id="submit" class="hide">Submit</button>
+        </div>
+    </div>
+
+    <div id="score-container" class="hide">
+        <h3>Quiz Completed</h3>
+        <h2 id="score-text">You scored X out of X</h2>
+        <button id="restart-btn">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

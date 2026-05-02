@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-container {
+    width: 450px;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+header h2 {
+    color: #38bdf8;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+header p {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.question-header {
+    margin-bottom: 20px;
+}
+
+#question-number {
+    font-size: 0.8rem;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+#question-text {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.options-list {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.options-list li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.options-list li:hover {
+    background: rgba(56, 189, 248, 0.1);
+}
+
+.options-list input {
+    margin-right: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    color: #0f172a;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+#score-container {
+    text-align: center;
+    color: #e2e8f0;
+}
+
+#score-container h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #34d399;
+}
